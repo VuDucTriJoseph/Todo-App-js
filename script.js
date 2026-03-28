@@ -155,6 +155,7 @@ function setActiveFilter(data) {
   });
 
   renderTodos();
+  checkEmptyState();
 }
 
 function setDate() {
@@ -167,5 +168,6 @@ function setDate() {
 window.addEventListener("DOMContentLoaded", () => {
   loadTodos();
   updateItemsCount();
+  checkEmptyState();
   setDate();
 });
